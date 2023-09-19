@@ -29,16 +29,16 @@ function showImage(imageData) {
 
 //4. Accordéons
 const advantages = document.querySelector("#advantages");
-const buttonAdv = document.querySelector(".product-acrd-lnk");
+const buttonAdv = document.querySelector(".adv");
 buttonAdv.addEventListener("click", function () {
     advantages.classList.toggle("hidden");
   });
 
-//   const features = document.querySelector("#features");
-// const buttonFeatures = document.querySelector("#buttonFeatures");
-// buttonFeatures.addEventListener("click", function () {
-//     advantages.classList.toggle("hidden");
-//   });
+  const features = document.querySelector("#features");
+const buttonFeatures = document.querySelector(".ftrs");
+buttonFeatures.addEventListener("click", function () {
+    features.classList.toggle("hidden");
+  });
 //5. Produits similaires (mobile)
 
 //6. Produits similaires (desktop)
