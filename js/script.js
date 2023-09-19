@@ -28,7 +28,17 @@ function showImage(imageData) {
 //3. Ajout au panier
 
 //4. Accordéons
+const advantages = document.querySelector("#advantages");
+const buttonAdv = document.querySelector(".product-acrd-lnk");
+buttonAdv.addEventListener("click", function () {
+    advantages.classList.toggle("hidden");
+  });
 
+//   const features = document.querySelector("#features");
+// const buttonFeatures = document.querySelector("#buttonFeatures");
+// buttonFeatures.addEventListener("click", function () {
+//     advantages.classList.toggle("hidden");
+//   });
 //5. Produits similaires (mobile)
 
 //6. Produits similaires (desktop)
