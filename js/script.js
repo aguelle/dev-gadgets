@@ -1,13 +1,16 @@
 //1. Galerie des photos (mobile)
 
-// document.querySelector("#pictures .pictures-prev").addEventListener("click", function () {
-//     let imgList = document.querySelector("#gallery-thumbs");
-//     imgList.appendChild(imgList.firstElementChild);
-//   });
+document.querySelector("#pictures .pictures-prev").addEventListener("click", function () {
+  // advantages.classList.toggle("hidden");
+
+    let imgList = document.querySelector("#gallery-thumbs");
+    imgList.appendChild(imgList.firstElementChild);
+  // });
 //   document.querySelector("#pictures .button .pictures-next").addEventListener("click", function () {
 //     let imgList = document.querySelector("#gallery-thumbs");
 //     imgList.appendChild(imgList.lastElementChild);
-//   });
+  });
+
 //2. Galerie des photos (desktop)
 
 document.querySelectorAll(".thumbs-img").forEach((img) => {
@@ -26,10 +29,15 @@ function showImage(imageData) {
 }
 
 //3. Ajout au panier
-document.getElementById("add-cta").addEventListener("click", function(){
+// const button = document.querySelector(".add-cta");
+let cta = document.getElementById("add-cta");
+cta.addEventListener("click", function(){
 let cartnb = document.getElementById("cart-nb");
 let qtity = document.getElementById("add-qty");
-cartnb.value = qtity.value;
+cartnb.value = parseInt(qtity.value);
+cta.classList.toggle("add-cta-click");
+cta.innerHTML= "Déjà au panier";
+
 });
 
 //4. Accordéons
