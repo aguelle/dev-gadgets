@@ -19,7 +19,7 @@
             </a>
             <a class="cart" href="#">
                 <img class="cart-img" src="img/cart.png" alt="panier">
-                <span class="cart-nb">0</span>
+                <span id="cart-nb" class="cart-nb">0</span>
             </a>
         </div>
     </header>
@@ -52,8 +52,8 @@
                 11€95
             </div>
             <div class="add">
-                <input class="add-qty" type="text" value="1">
-                <button class="add-cta" type="button">Ajouter au panier</button>
+                <input id="add-qty" class="add-qty" type="text" value="1">
+                <button id="add-cta" class="add-cta" type="button">Ajouter au panier</button>
             </div>
         </section>
         <section class="page-txt page-section">
@@ -86,6 +86,8 @@
         </section>
         <section class="similar page-section">
             <h2 class="product-subttl">Articles similaires</h2>
+            <button type="button" class="picture-similar pictures-prev">◀️</button>
+            <button type="button" class="picture-similar pictures-next">▶️</button>
             <ul class="similar-lst">
                 <li class="similar-itm">
                     <a class="similar-lnk" href="#">

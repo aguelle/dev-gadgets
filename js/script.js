@@ -26,19 +26,29 @@ function showImage(imageData) {
 }
 
 //3. Ajout au panier
+document.getElementById("add-cta").addEventListener("click", function(){
+let cartnb = document.getElementById("cart-nb");
+let qtity = document.getElementById("add-qty");
+cartnb.value = qtity.value;
+});
 
 //4. Accordéons
 const advantages = document.querySelector("#advantages");
 const buttonAdv = document.querySelector(".adv");
 buttonAdv.addEventListener("click", function () {
     advantages.classList.toggle("hidden");
+    buttonAdv.classList.toggle("closed")
   });
 
   const features = document.querySelector("#features");
 const buttonFeatures = document.querySelector(".ftrs");
 buttonFeatures.addEventListener("click", function () {
     features.classList.toggle("hidden");
+    buttonFeatures.classList.toggle("closed")
+
   });
 //5. Produits similaires (mobile)
 
+
 //6. Produits similaires (desktop)
+

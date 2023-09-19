@@ -342,7 +342,7 @@ body {
 }
 .similar-lst {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 .similar-lnk {
     position: relative;
@@ -380,10 +380,58 @@ body {
     background-color: var(--primary-color);
 }
 
+
+
 @media screen and (min-width: 768px) {
     .similar-lnk:hover {
         background-color: #dddddd;
     }
+    .similar {
+        width: 100%;
+        max-width: var(--container-width);
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .similar-lst {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .similar-lnk {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+        color: #000;
+        background-color: #fff;
+        height: 100%;
+        transition: background var(--transition-duration) var(--transition-function);
+    }
+    .similar-img {
+        width:100%;
+    }
+    .similar-ttl {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .similar-price {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        padding: 0 1rem;
+        border-radius: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        background-color: var(--primary-color);
+    }
+    
 }
 
 /* REINSURANCE  */
